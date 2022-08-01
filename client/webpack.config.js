@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'JATE'
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -29,24 +29,21 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
-        background_color: '#225ca3',
-        theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        name: 'text-editor',
+        short_name: 'JATE',
+        description: 'Just another Text Editor!',
+        background_color: '#272822',
+        theme_color: '#272822',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
+            size: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
         ],
       }),
-
-
-
     ],
 
     module: {
@@ -58,12 +55,11 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
             },
           },
         },
