@@ -2,13 +2,13 @@
 
 ## Description
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+ This project features some of the most impressive basic programming concepts in order to build a Text Editor that runs in the browser.
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+ The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+To build this text editor, developers will start with an existing application and implement methods for getting and storing data to an IndexedDB database. Developers will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+Developer should deploy this full-stack application to Heroku.
 
 
 ## Table of Contents
@@ -16,10 +16,7 @@ You will deploy this full-stack application to Heroku using the [Heroku Deployme
 - [Usage](#usage)
 - [Installation](#Installation)
 - [Screenshots-of-Deployment](#screenshots-of-Deployment)
-- [Walkthrough-Video-Link](#walkthrough-Video-Link)
-- [URL-of-GitHub-Repository](#URL-of-GitHub-Repository)
-
-
+- [URLS](#URLS)
 
 
 ## User-Story
@@ -62,22 +59,27 @@ THEN I should have proper build scripts for a webpack application
 
 ## Installation
 - node.js
-- Express.js
-- Mongoose
-- Insomnia
+- Heroku
+- express
+- if-env
+- concurrently
+- nodemon
 
 ## Screenshots-of-Deployment
-### View from Insomnia
-![alt text](./assets/view-from-insomnia.PNG "insomnia structure")
+### Offline Working App
+![alt text](./assets/offline-app.PNG "off-app")
 
+### Manifest File in the browser
+![alt text](./assets/manifest.PNG "manifest")
 
-## Walkthrough-Video-Link
-### VS Code Development
-https://youtu.be/kGAIAOZrYFs
+### Registered Service Worker in the Browser
+![alt text](./assets/service-worker.PNG "SW")
 
-### Insomnia Development
-https://youtu.be/gKpiIhXtqgo
+### IndexedDB Storage in the Browser
+![alt text](./assets/idb-storage.PNG "IdB")
 
-
-## URL-of-GitHub-Repository
-https://github.com/mattesanna017/Social-Network-API-W18
+## URLS
+### GitHub repository
+https://github.com/mattesanna017/Text-Editor-W19
+### Heroku App 
+https://text-editor-w19.herokuapp.com/
